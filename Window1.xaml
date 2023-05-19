@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp6.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800"
+          WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Background="Transparent">
+    <Grid  Background="#282828" RenderTransformOrigin="0.481,0.601">
+        <StackPanel VerticalAlignment="Top" Margin="0,132,0,0" Height="127">
+            <TextBlock Text="Регистрация" FontSize="24" FontWeight="Bold" Foreground="Red" Grid.ColumnSpan="2" TextAlignment="Center"/>
+            <TextBox HorizontalAlignment="Center"
+                     materialDesign:HintAssist.Hint="Введите Логин"
+                     FontSize="20"
+                     Background="White"
+                     Width="200"
+                     TextAlignment="Center"
+                     Margin="0 10 0 0"/>
+            <TextBox HorizontalAlignment="Center"
+                     materialDesign:HintAssist.Hint="Введите пароль"
+                     FontSize="20"
+                     Background="White"
+                     Width="200"
+                     TextAlignment="Center"
+                     Margin="0 10 0 0"/>
+        </StackPanel>
+        <Button Click="Button_Click" Margin="298,280,298,138" materialDesign:ButtonAssist.CornerRadius="15" Background="Transparent" BorderBrush="Red" Foreground="Red"
+                Cursor="Hand"
+                Content="Тут есть еда!"/>
+    </Grid>
+</Window>
